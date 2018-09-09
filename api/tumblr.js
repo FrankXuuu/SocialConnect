@@ -13,4 +13,6 @@ router.get('/login', (req, res) => {
   res.redirect(`https://www.tumblr.com/oauth/authorize?client_id=${tumblr_consumerkey}&scope=identify&response_type=code&redirect_uri=${redirect}`);
 });
 
+module.exports = router;
+
 
