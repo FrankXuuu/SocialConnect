@@ -36,6 +36,8 @@ public class ConnectionsActivity extends AppCompatActivity implements View.OnCli
             case R.id.tumblr_btn:
                 Intent intent = new Intent(this, TumblrActivity.class);
                 startActivity(intent);
+                DialogFragment snapDialog = new SnapchatDialogFragment();
+                snapDialog.show(getSupportFragmentManager(), "ayy");
                 break;
         }
     }
