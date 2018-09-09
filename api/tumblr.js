@@ -7,4 +7,4 @@ const tumblr_secret = process.env.TUMBLR_SECRET;
 
 const tumblr_req = 'https://www.tumblr.com/oauth/request_token';
 
-const redirect = encodeURIComponent('http://localhost:50451/api/tumblr/callback');
+const redirect = encodeURIComponent('http://localhost:8080/api/tumblr/callback');
