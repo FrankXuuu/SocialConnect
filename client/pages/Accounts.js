@@ -10,7 +10,7 @@ export default class Accounts extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-            <Image style={localStyles.icon} source={require('../images/logoicon.png')}/>
+            <Image style={localStyles.icon} source={require('../images/logowhite.png')}/>
                 <View style={styles.subContainer} >
                 <TouchableOpacity style={[globalStyles.button, styles.signInButton, localStyles.signUpButton]} onPress={() => this.props.navigation.push('LoginDashboard')}>
                     <Text style={[styles.signInButtonText, globalStyles.buttonText, localStyles.signInText]}>Instagram</Text>
