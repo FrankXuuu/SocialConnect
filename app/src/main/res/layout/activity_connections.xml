@@ -11,140 +11,121 @@
     <ImageView
         android:src="@drawable/facebook_logo"
         android:id="@+id/facebook_btn"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:text="Facebook"
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
 
-    <LinearLayout
+    <EditText
         android:id="@+id/facebook_input"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:imeOptions="actionDone"
-            android:gravity="center"
-            android:backgroundTint="@color/colorAccent"/>
-
-    </LinearLayout>
+        android:hint="Username"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorAccent"/>
 
     <ImageView
         android:src="@drawable/instagram_logo"
         android:id="@+id/instagram_btn"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:text="Instagram"
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
 
-    <LinearLayout
+    <EditText
         android:id="@+id/instagram_input"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:imeOptions="actionDone"
-            android:gravity="center"
-            android:backgroundTint="@color/colorAccent"/>
-
-    </LinearLayout>
+        android:hint="Username"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorAccent"/>
 
     <ImageView
         android:src="@drawable/tumblr_logo_white"
         android:id="@+id/tumblr_btn"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:text="Tumblr"
         android:focusable="true"
         android:clickable="true"
         />
 
-    <LinearLayout
+
+    <EditText
         android:id="@+id/tumblr_input"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:imeOptions="actionDone"
-            android:gravity="center"
-            android:backgroundTint="@color/colorAccent"/>
-
-    </LinearLayout>
+        android:hint="Username"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorAccent"/>
 
     <ImageView
         android:src="@drawable/github_logo"
         android:id="@+id/snapchat_btn"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
 
-    <LinearLayout
+    <EditText
         android:id="@+id/github_input"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:imeOptions="actionDone"
-            android:gravity="center"
-            android:backgroundTint="@color/colorAccent"/>
-
-    </LinearLayout>
+        android:hint="Username"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorAccent"/>
 
     <ImageView
         android:src="@drawable/linkedin_logo"
         android:id="@+id/myspace_btn"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:text="MySpace"
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
 
-    <LinearLayout
+    <EditText
         android:id="@+id/linkedin_input"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
+        android:hint="Username"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorAccent"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:imeOptions="actionDone"
-            android:gravity="center"
-            android:backgroundTint="@color/colorAccent"/>
+    <ImageView
+        android:src="@drawable/snapchat_logo_text"
+        android:id="@+id/snap_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="MySpace"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="12dp"/>
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/snap_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorAccent"/>
 
 </LinearLayout>
