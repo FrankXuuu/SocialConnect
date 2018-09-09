@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 
 public interface SocialConnectClient {
 
-    @GET("/api/tumblr/login/")
+    @GET("/login/")
     Call<User> login();
 
     /*@GET("/user/{userId}")
