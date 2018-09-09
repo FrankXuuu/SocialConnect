@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class SocialConnectorServiceGenerator {
 
-    private static final String BASE_URL = "http://application-cluster-elb-1852332020.us-east-2.elb.amazonaws.com";
+    private static final String BASE_URL = "http://localhost:8080";
 
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
