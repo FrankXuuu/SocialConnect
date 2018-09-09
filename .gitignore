@@ -29,6 +29,12 @@ proguard/
 # Android Studio Navigation editor temp files
 .navigation/
 
+# Expo
+.expo/
+
+# OS X
+.DS_Store
+
 # Android Studio captures folder
 captures/
 
@@ -66,8 +72,6 @@ fastlane/readme.md
 
 
 # yeee
-.expo/
-.DS_Store
 .idea/
 
 # node modules

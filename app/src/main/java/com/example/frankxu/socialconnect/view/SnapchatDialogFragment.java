@@ -22,7 +22,7 @@ public class SnapchatDialogFragment extends Fragment implements View.OnClickList
 
         View signInBtn = view.findViewById(R.id.sign_in_btn);
         signInBtn.setOnClickListener(this);
-        
+
         return view;
     }
 
