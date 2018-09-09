@@ -9,6 +9,8 @@ import QRCode from 'react-native-qrcode';
 export default class MenuScreen extends React.Component {
     render() {
         return (
+            <a href="/api/tumblr/login">Login through discord</a>
+
             <View style={styles.container}>
             <Image style={localStyles.icon} source={require('../images/logoicon.png')}/>
                 <View style={styles.subContainer} >
