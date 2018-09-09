@@ -24,10 +24,6 @@
         <activity android:name=".view.CameraActivity"/>
         <activity android:name=".view.FirstActivity"/>
         <activity android:name=".view.ConnectionsActivity"/>
-        <activity android:name=".view.TumblrActivity"/>
-        <activity android:name=".view.FacebookActivity"/>
-        <activity android:name=".view.InstagramActivity"/>
-        <activity android:name=".view.MySpaceActivity"/>
     </application>
 
 </manifest>

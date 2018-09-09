@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView qrHolder = findViewById(R.id.qr_holder);
 
         String url="https://saioduri.github.io/SocialConnect/index.html?" +
-                "facebook=frankxu5&" +
+                "facebook=frankxuuu&" +
                 "instagram=frankxuu&" +
                 "tumblr=rahmifications&" +
                 "github=frankxuuu&" +

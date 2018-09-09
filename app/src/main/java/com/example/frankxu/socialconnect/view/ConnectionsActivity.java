@@ -13,6 +13,11 @@ import com.example.frankxu.socialconnect.service.SocialConnectClient;
 import com.example.frankxu.socialconnect.service.SocialConnectServiceGenerator;
 
 public class ConnectionsActivity extends AppCompatActivity implements View.OnClickListener{
+    private View facebookInp;
+    private View instagramInp;
+    private View tumblrInp;
+    private View githubInp;
+    private View linkedinInp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,32 +39,51 @@ public class ConnectionsActivity extends AppCompatActivity implements View.OnCli
         View myspaceBtn = findViewById(R.id.myspace_btn);
         myspaceBtn.setOnClickListener(this);
 
+        facebookInp = findViewById(R.id.facebook_input);
+        instagramInp = findViewById(R.id.instagram_input);
+        tumblrInp = findViewById(R.id.tumblr_input);
+        githubInp = findViewById(R.id.github_input);
+        linkedinInp = findViewById(R.id.linkedin_input);
 
     }
 
     @Override
     public void onClick(View view) {
-        Intent intent;
         switch(view.getId()) {
             case R.id.snapchat_btn:
-                DialogFragment dialogFragment = new SnapchatDialogFragment();
-                dialogFragment.show(getSupportFragmentManager(), "ayy");
+                if (githubInp.getVisibility() == View.GONE) {
+                    githubInp.setVisibility(View.VISIBLE);
+                } else {
+                    githubInp.setVisibility(View.GONE);
+                }
                 break;
             case R.id.tumblr_btn:
-                intent = new Intent(this, TumblrActivity.class);
-                startActivity(intent);
+                if (tumblrInp.getVisibility() == View.GONE) {
+                    tumblrInp.setVisibility(View.VISIBLE);
+                } else {
+                    tumblrInp.setVisibility(View.GONE);
+                }
                 break;
             case R.id.facebook_btn:
-                intent = new Intent(this, TumblrActivity.class);
-                startActivity(intent);
+                if (facebookInp.getVisibility() == View.GONE) {
+                    facebookInp.setVisibility(View.VISIBLE);
+                } else {
+                    facebookInp.setVisibility(View.GONE);
+                }
                 break;
             case R.id.instagram_btn:
-                intent = new Intent(this, TumblrActivity.class);
-                startActivity(intent);
+                if (instagramInp.getVisibility() == View.GONE) {
+                    instagramInp.setVisibility(View.VISIBLE);
+                } else {
+                    instagramInp.setVisibility(View.GONE);
+                }
                 break;
             case R.id.myspace_btn:
-                intent = new Intent(this, TumblrActivity.class);
-                startActivity(intent);
+                if (linkedinInp.getVisibility() == View.GONE) {
+                    linkedinInp.setVisibility(View.VISIBLE);
+                } else {
+                    linkedinInp.setVisibility(View.GONE);
+                }
                 break;
         }
     }
