@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.frankxu.socialconnect.view.MainActivity"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:background="@color/whiteaf">
 
@@ -16,27 +13,35 @@
         android:layout_height="200dp" />
 
     <ImageView
+        android:layout_marginTop="150dp"
         android:id="@+id/qr_holder"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/frame"/>
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"/>
 
-    <TextView
+    <!--TextView
         android:id="@+id/scan_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Scan!"
         android:focusable="true"
         android:clickable="true"
-        android:padding="12dp"/>
+        android:padding="12dp"/-->
 
     <TextView
+        android:background="@android:color/white"
+        android:layout_below="@id/qr_holder"
         android:id="@+id/connect_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Accounts!"
+        android:text="Add Accounts"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
         android:focusable="true"
         android:clickable="true"
+        android:elevation="3dp"
         android:padding="12dp"/>
 
-</LinearLayout>
+</RelativeLayout>

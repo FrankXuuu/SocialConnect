@@ -19,25 +19,47 @@ public class ConnectionsActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connections);
 
+        View facebookBtn = findViewById(R.id.facebook_btn);
+        facebookBtn.setOnClickListener(this);
+
+        View instagramBtn = findViewById(R.id.instagram_btn);
+        instagramBtn.setOnClickListener(this);
+
         View snapchatBtn = findViewById(R.id.snapchat_btn);
         snapchatBtn.setOnClickListener(this);
 
         View tumblrBtn = findViewById(R.id.tumblr_btn);
         tumblrBtn.setOnClickListener(this);
+
+        View myspaceBtn = findViewById(R.id.myspace_btn);
+        myspaceBtn.setOnClickListener(this);
+
+
     }
 
     @Override
     public void onClick(View view) {
+        Intent intent;
         switch(view.getId()) {
             case R.id.snapchat_btn:
                 DialogFragment dialogFragment = new SnapchatDialogFragment();
                 dialogFragment.show(getSupportFragmentManager(), "ayy");
                 break;
             case R.id.tumblr_btn:
-                Intent intent = new Intent(this, TumblrActivity.class);
+                intent = new Intent(this, TumblrActivity.class);
                 startActivity(intent);
-                DialogFragment snapDialog = new SnapchatDialogFragment();
-                snapDialog.show(getSupportFragmentManager(), "ayy");
+                break;
+            case R.id.facebook_btn:
+                intent = new Intent(this, TumblrActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.instagram_btn:
+                intent = new Intent(this, TumblrActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.myspace_btn:
+                intent = new Intent(this, TumblrActivity.class);
+                startActivity(intent);
                 break;
         }
     }

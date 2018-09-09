@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -22,18 +21,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View scanBtn = findViewById(R.id.scan_btn);
-        scanBtn.setOnClickListener(this);
         View connectBtn = findViewById(R.id.connect_btn);
         connectBtn.setOnClickListener(this);
 
         ImageView qrHolder = findViewById(R.id.qr_holder);
 
-        String text="{\"what\": \"THE heck\"}"; // Whatever you need to encode in the QR code
+        String url="https://saioduri.github.io/SocialConnect/index.html?" +
+                "facebook=frankxu5&" +
+                "instagram=frankxuu&" +
+                "tumblr=rahmifications&" +
+                "github=frankxuuu&" +
+                "linkedin=frank-xu-3669a0156"; // Whatever you need to encode in the QR code
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         try {
-            BitMatrix bitMatrix = multiFormatWriter.encode(text, BarcodeFormat.QR_CODE,
-                    500,500);
+            BitMatrix bitMatrix = multiFormatWriter.encode(url, BarcodeFormat.QR_CODE,
+                    300,300);
             BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
             Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
             qrHolder.setImageBitmap(bitmap);
@@ -45,10 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
-            case R.id.scan_btn:
-                Intent intentCamera = new Intent(this, CameraActivity.class);
-                startActivity(intentCamera);
-                break;
             case R.id.connect_btn:
                 Intent intentConnection = new Intent(this, ConnectionsActivity.class);
                 startActivity(intentConnection);
