@@ -19,6 +19,24 @@
         android:clickable="true"
         android:padding="12dp"/>
 
+    <LinearLayout
+        android:id="@+id/facebook_input"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"/>
+
+    </LinearLayout>
+
     <ImageView
         android:src="@drawable/instagram_logo"
         android:id="@+id/instagram_btn"
@@ -28,6 +46,24 @@
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/instagram_input"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"/>
+
+    </LinearLayout>
 
     <ImageView
         android:src="@drawable/tumblr_logo_white"
@@ -39,18 +75,53 @@
         android:clickable="true"
         />
 
+    <LinearLayout
+        android:id="@+id/tumblr_input"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"/>
+
+    </LinearLayout>
+
     <ImageView
-        android:src="@drawable/snapchat_logo_text"
+        android:src="@drawable/github_logo"
         android:id="@+id/snapchat_btn"
         android:layout_width="108dp"
         android:layout_height="48dp"
-        android:text="Snapchat"
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
 
+    <LinearLayout
+        android:id="@+id/github_input"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"/>
+
+    </LinearLayout>
+
     <ImageView
-        android:src="@drawable/myspace"
+        android:src="@drawable/linkedin_logo"
         android:id="@+id/myspace_btn"
         android:layout_width="108dp"
         android:layout_height="48dp"
@@ -58,5 +129,23 @@
         android:focusable="true"
         android:clickable="true"
         android:padding="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/linkedin_input"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:backgroundTint="@color/colorAccent"/>
+
+    </LinearLayout>
 
 </LinearLayout>
